@@ -16,7 +16,7 @@ A comprehensive spa management system featuring:
 - Admin dashboard for purchase tracking
 - Staff scheduling calendar with color-coded services
 
-### SaulÄ—s VÄ—jas (saulesvejas.com)
+### Saulės Vėjas (saulesvejas.com)
 A modern website for a renewable energy company featuring:
 - Clean, professional design
 - Responsive layout
