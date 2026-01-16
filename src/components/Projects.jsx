@@ -35,143 +35,9 @@ function Projects() {
             </a>
           </div>
 
-          <div className="project-features">
-            {/* Feature 1: Voucher System */}
-            <div className="feature-card">
-              <div className="feature-header">
-                <div className="feature-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="2" y="5" width="20" height="14" rx="2"></rect>
-                    <line x1="2" y1="10" x2="22" y2="10"></line>
-                  </svg>
-                </div>
-                <h4 className="feature-title">Voucher & Coupon System</h4>
-              </div>
-              <p className="feature-description">
-                Custom-built voucher system that automatically generates unique codes 
-                and sends them via email upon purchase. Includes admin controls for 
-                discount types, expiration dates, and usage tracking.
-              </p>
-              <div className="feature-mockup voucher-mockup">
-                <div className="mockup-header">
-                  <span className="mockup-dot"></span>
-                  <span className="mockup-dot"></span>
-                  <span className="mockup-dot"></span>
-                  <span className="mockup-title">Voucher Management</span>
-                </div>
-                <div className="mockup-content">
-                  <div className="mockup-form">
-                    <div className="form-row">
-                      <div className="form-group">
-                        <label>Voucher Code</label>
-                        <div className="input-with-btn">
-                          <input type="text" value="SPA-2024-X7K9" readOnly />
-                          <button>Generate</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="form-row two-col">
-                      <div className="form-group">
-                        <label>Discount Type</label>
-                        <select><option>Percentage (%)</option></select>
-                      </div>
-                      <div className="form-group">
-                        <label>Amount</label>
-                        <input type="text" value="15" />
-                      </div>
-                    </div>
-                    <div className="form-row two-col">
-                      <div className="form-group">
-                        <label>Expiration Date</label>
-                        <input type="text" value="2024-12-31" />
-                      </div>
-                      <div className="form-group">
-                        <label>Status</label>
-                        <div className="status-badge active">Active</div>
-                      </div>
-                    </div>
-                    <div className="form-actions">
-                      <button className="mockup-btn primary">Save & Send Email</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Feature 2: Admin Dashboard */}
-            <div className="feature-card">
-              <div className="feature-header">
-                <div className="feature-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M3 3h18v18H3z"></path>
-                    <path d="M3 9h18"></path>
-                    <path d="M9 21V9"></path>
-                  </svg>
-                </div>
-                <h4 className="feature-title">Admin Purchase Dashboard</h4>
-              </div>
-              <p className="feature-description">
-                Custom admin panel for managing customer purchases with real-time 
-                tracking, status updates, and filtering capabilities. Enables staff 
-                to monitor all transactions at a glance.
-              </p>
-              <div className="feature-mockup dashboard-mockup">
-                <div className="mockup-header">
-                  <span className="mockup-dot"></span>
-                  <span className="mockup-dot"></span>
-                  <span className="mockup-dot"></span>
-                  <span className="mockup-title">Purchase History</span>
-                </div>
-                <div className="mockup-content">
-                  <div className="dashboard-filters">
-                    <input type="text" placeholder="Search customers..." className="search-input" />
-                    <select className="filter-select"><option>All Status</option></select>
-                    <button className="export-btn">Export</button>
-                  </div>
-                  <table className="dashboard-table">
-                    <thead>
-                      <tr>
-                        <th>ID</th>
-                        <th>Customer</th>
-                        <th>Email</th>
-                        <th>Amount</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>#1042</td>
-                        <td>Jonas P.</td>
-                        <td>jonas@email.lt</td>
-                        <td>€89.00</td>
-                        <td>Jan 15</td>
-                        <td><span className="status completed">Completed</span></td>
-                      </tr>
-                      <tr>
-                        <td>#1041</td>
-                        <td>Rūta K.</td>
-                        <td>ruta@email.lt</td>
-                        <td>€145.00</td>
-                        <td>Jan 14</td>
-                        <td><span className="status completed">Completed</span></td>
-                      </tr>
-                      <tr>
-                        <td>#1040</td>
-                        <td>Mindaugas S.</td>
-                        <td>mind@email.lt</td>
-                        <td>€65.00</td>
-                        <td>Jan 14</td>
-                        <td><span className="status pending">Pending</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-
-            {/* Feature 3: Calendar System */}
-            <div className="feature-card">
+          <div className="project-features two-col">
+            {/* Feature 1: Staff Calendar System */}
+            <div className="feature-card feature-large">
               <div className="feature-header">
                 <div className="feature-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -184,50 +50,197 @@ function Projects() {
                 <h4 className="feature-title">Staff Calendar System</h4>
               </div>
               <p className="feature-description">
-                Interactive staff scheduling calendar with color-coded services 
-                and time management. Allows easy visualization of appointments 
-                across different spa zones and staff members.
+                Interactive scheduling calendar with 7 color-coded spa zones, 
+                real-time appointment management, role-based permissions, and 
+                mobile-responsive timeline view. Built with custom PHP/AJAX backend.
               </p>
-              <div className="feature-mockup calendar-mockup">
-                <div className="mockup-header">
+              <div className="feature-mockup calendar-mockup-real">
+                <div className="mockup-header mockup-header-modern">
                   <span className="mockup-dot"></span>
                   <span className="mockup-dot"></span>
                   <span className="mockup-dot"></span>
-                  <span className="mockup-title">Staff Schedule</span>
+                  <span className="mockup-title">Kalendorius</span>
+                </div>
+                <div className="mockup-content calendar-content">
+                  <div className="calendar-toolbar">
+                    <div className="calendar-nav-modern">
+                      <button className="nav-arrow">&lsaquo;</button>
+                      <span className="current-date">Sausio 16, Ketvirtadienis</span>
+                      <button className="nav-arrow">&rsaquo;</button>
+                    </div>
+                  </div>
+                  <div className="calendar-grid-real">
+                    <div className="calendar-header-row">
+                      <div className="time-col-header"></div>
+                      <div className="zone-header zone-didzioja">DIDZIOJI</div>
+                      <div className="zone-header zone-mazoja">MAZOJI</div>
+                      <div className="zone-header zone-roziu">Roziu</div>
+                      <div className="zone-header zone-levandu">Levandu</div>
+                      <div className="zone-header zone-magnoliju">Magnoliju</div>
+                    </div>
+                    <div className="calendar-body">
+                      <div className="time-row">
+                        <div className="time-label">09:00</div>
+                        <div className="slot"></div>
+                        <div className="slot">
+                          <div className="appt appt-mazoja">
+                            <span className="appt-time">09:00-10:30</span>
+                            <span className="appt-name">Masazas</span>
+                            <span className="appt-staff">Lina K.</span>
+                          </div>
+                        </div>
+                        <div className="slot"></div>
+                        <div className="slot">
+                          <div className="appt appt-levandu">
+                            <span className="appt-time">09:00-11:00</span>
+                            <span className="appt-name">SPA ritualas</span>
+                            <span className="appt-staff">Ana M.</span>
+                          </div>
+                        </div>
+                        <div className="slot"></div>
+                      </div>
+                      <div className="time-row">
+                        <div className="time-label">11:00</div>
+                        <div className="slot">
+                          <div className="appt appt-didzioja">
+                            <span className="appt-time">11:00-12:00</span>
+                            <span className="appt-name">Grupe</span>
+                            <span className="appt-staff">Jonas P.</span>
+                          </div>
+                        </div>
+                        <div className="slot"></div>
+                        <div className="slot">
+                          <div className="appt appt-roziu">
+                            <span className="appt-time">11:00-12:30</span>
+                            <span className="appt-name">Veido proc.</span>
+                            <span className="appt-staff">Ruta S.</span>
+                          </div>
+                        </div>
+                        <div className="slot"></div>
+                        <div className="slot">
+                          <div className="appt appt-magnoliju">
+                            <span className="appt-time">11:00-13:00</span>
+                            <span className="appt-name">Aromaterapija</span>
+                            <span className="appt-staff">Lina K.</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="time-row">
+                        <div className="time-label">13:00</div>
+                        <div className="slot"></div>
+                        <div className="slot">
+                          <div className="appt appt-mazoja">
+                            <span className="appt-time">13:00-14:00</span>
+                            <span className="appt-name">Masazas</span>
+                            <span className="appt-staff">Jonas P.</span>
+                          </div>
+                        </div>
+                        <div className="slot"></div>
+                        <div className="slot"></div>
+                        <div className="slot"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Feature 2: Admin Dashboard */}
+            <div className="feature-card feature-large">
+              <div className="feature-header">
+                <div className="feature-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 3h18v18H3z"></path>
+                    <path d="M3 9h18"></path>
+                    <path d="M9 21V9"></path>
+                  </svg>
+                </div>
+                <h4 className="feature-title">Orders Management Dashboard</h4>
+              </div>
+              <p className="feature-description">
+                Custom DataTables-powered admin panel with real-time order tracking, 
+                inline editing, status management, and export functionality. 
+                Handles voucher purchases and customer data efficiently.
+              </p>
+              <div className="feature-mockup dashboard-mockup-real">
+                <div className="mockup-header mockup-header-blue">
+                  <span className="mockup-dot"></span>
+                  <span className="mockup-dot"></span>
+                  <span className="mockup-dot"></span>
+                  <span className="mockup-title">Uzsakymai</span>
                 </div>
                 <div className="mockup-content">
-                  <div className="calendar-nav">
-                    <button className="nav-btn">←</button>
-                    <span className="calendar-date">January 15 - 19, 2024</span>
-                    <button className="nav-btn">→</button>
+                  <div className="dashboard-toolbar">
+                    <div className="toolbar-left">
+                      <span className="show-label">Rodyti</span>
+                      <select className="entries-select">
+                        <option>25</option>
+                      </select>
+                      <span className="show-label">irasu</span>
+                    </div>
+                    <div className="toolbar-right">
+                      <input type="text" placeholder="Ieskoti..." className="search-box" />
+                    </div>
                   </div>
-                  <div className="calendar-grid">
-                    <div className="time-column">
-                      <div className="time-slot">09:00</div>
-                      <div className="time-slot">11:00</div>
-                      <div className="time-slot">13:00</div>
-                      <div className="time-slot">15:00</div>
-                    </div>
-                    <div className="day-column">
-                      <div className="day-header">Mon</div>
-                      <div className="event massage">Massage - Lina</div>
-                      <div className="event empty"></div>
-                      <div className="event facial">Facial - Ana</div>
-                      <div className="event sauna">Sauna Zone</div>
-                    </div>
-                    <div className="day-column">
-                      <div className="day-header">Tue</div>
-                      <div className="event empty"></div>
-                      <div className="event massage">Massage - Jonas</div>
-                      <div className="event massage">Massage - Lina</div>
-                      <div className="event empty"></div>
-                    </div>
-                    <div className="day-column">
-                      <div className="day-header">Wed</div>
-                      <div className="event facial">Facial - Ana</div>
-                      <div className="event sauna">Sauna Zone</div>
-                      <div className="event empty"></div>
-                      <div className="event massage">Massage - Jonas</div>
+                  <table className="orders-table">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Data</th>
+                        <th>Produktas</th>
+                        <th>Kiekis</th>
+                        <th>Suma</th>
+                        <th>Busena</th>
+                        <th>Panaud.</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="id-cell">#1042</td>
+                        <td>2024-01-15</td>
+                        <td className="product-cell">SPA dovanu kuponas - 100</td>
+                        <td>1</td>
+                        <td className="amount-cell">100.00</td>
+                        <td><span className="order-status completed">Apmoketa</span></td>
+                        <td><input type="checkbox" className="used-check" /></td>
+                      </tr>
+                      <tr className="row-used">
+                        <td className="id-cell">#1041</td>
+                        <td>2024-01-14</td>
+                        <td className="product-cell">Masazo abonementas x5</td>
+                        <td>1</td>
+                        <td className="amount-cell">225.00</td>
+                        <td><span className="order-status completed">Apmoketa</span></td>
+                        <td><input type="checkbox" className="used-check" checked readOnly /></td>
+                      </tr>
+                      <tr>
+                        <td className="id-cell">#1040</td>
+                        <td>2024-01-14</td>
+                        <td className="product-cell">Veido procedura Premium</td>
+                        <td>2</td>
+                        <td className="amount-cell">180.00</td>
+                        <td><span className="order-status pending">Laukiama</span></td>
+                        <td><input type="checkbox" className="used-check" /></td>
+                      </tr>
+                      <tr>
+                        <td className="id-cell">#1039</td>
+                        <td>2024-01-13</td>
+                        <td className="product-cell">Aromaterapijos seansas</td>
+                        <td>1</td>
+                        <td className="amount-cell">65.00</td>
+                        <td><span className="order-status completed">Apmoketa</span></td>
+                        <td><input type="checkbox" className="used-check" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div className="table-footer">
+                    <span className="showing-info">Rodoma 1-25 is 148</span>
+                    <div className="pagination">
+                      <button className="page-btn">&lsaquo;</button>
+                      <button className="page-btn active">1</button>
+                      <button className="page-btn">2</button>
+                      <button className="page-btn">3</button>
+                      <button className="page-btn">&rsaquo;</button>
                     </div>
                   </div>
                 </div>
@@ -240,21 +253,21 @@ function Projects() {
             <div className="tech-list">
               <span className="tech-tag">WordPress</span>
               <span className="tech-tag">Custom JavaScript</span>
-              <span className="tech-tag">PHP</span>
-              <span className="tech-tag">Elementor</span>
-              <span className="tech-tag">Email Integration</span>
+              <span className="tech-tag">PHP / AJAX</span>
+              <span className="tech-tag">MySQL</span>
+              <span className="tech-tag">DataTables</span>
             </div>
           </div>
         </article>
 
-        {/* Project 2: SaulÄ—s VÄ—jas */}
+        {/* Project 2: Saules Vejas */}
         <article className="project-showcase project-secondary">
           <div className="project-intro">
             <div className="project-meta">
               <span className="project-number">02</span>
               <span className="project-type">Website Development</span>
             </div>
-            <h3 className="project-title">SaulÄ—s VÄ—jas</h3>
+            <h3 className="project-title">Saules Vejas</h3>
             <p className="project-description">
               A modern, professional website for a renewable energy company. Built with 
               WordPress and customized with clean design principles, responsive layouts, 
